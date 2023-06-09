@@ -1,0 +1,14 @@
+<odoo>
+    <record id="view_account_invoice_form" model="ir.ui.view">
+        <field name="name">account.invoice.form</field>
+        <field name="model">account.move</field>
+        <field name="inherit_id" ref="account.view_move_form"/>
+        <field name="arch" type="xml">
+            <field name="amount_residual" position="after">
+                <field name="abono_proxima_factura" readonly="1"/>
+                <!-- <label for="abono_proxima_factura" class="oe_edit_only"/> -->
+            </field>
+
+        </field>
+    </record>
+</odoo>

@@ -1,0 +1,14 @@
+<odoo>
+    <data>
+        <template id="report_invoice_document" inherit_id="account.report_invoice_document">
+            <xpath expr="//div[@class='page']" position="inside">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <strong>Abono a próximo mes:</strong>
+                        <span t-field="o.abono_proxima_factura" t-field-options="{'widget': 'monetary'}"/>
+                    </div>
+                </div>
+            </xpath>
+        </template>
+    </data>
+</odoo>
